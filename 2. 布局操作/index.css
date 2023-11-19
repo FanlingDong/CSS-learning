@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    width: 100%;
+    max-width: 800px;
+    min-width: 500px;
+    margin: 0 auto;
+    background-color: red;
+    display: flex;
+    /*height: 800px;*/
+    /*align-items: flex-end;*/
+    /*justify-content: center;*/
+}
+
+.flex-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    /*max-height: 500px;*/
+    /*max-width: 200px;*/
+
+    /*items设置成2：3：2*/
+    flex: 2
+}
+
+
+.flex-item:nth-child(2) {
+    flex: 3;
+    min-width: 251px;
+}
+
+/*奇数的元素*/
+.flex-item:nth-child(2n+1) {
+    width: 200px;
+}
+
+
+/* grid 布局*/
+.grid-container {
+    display: grid;
+    /*写3个值，默认是3列*/
+    /*grid-template-columns: 200px 300px 200px;*/
+
+    /*grid-template-columns: 20% 50% 30%;*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*grid-template-columns: repeat(auto-fill, 200px);*/
+    grid-template-columns: repeat(auto-fill, 200px);
+    height: 600px;
+    grid-template-rows: 1fr 2fr;
+}
+
+.grid-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: 5px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+/*选择器：选一个元素，并给它效果*/
+div {
+
+}
+/*class name 标签的选择器*/
+.box{
+    width: 500px; /* 像素 */
+    height: 180px;  /*内容回溢出去*/
+    border: 3px gray dotted;
+    border-radius: 8px;
+
+    /*内边距：content和border之间的距离*/
+    padding: 15px;
+
+    /*会算上padding/marigin/border*/
+    /*width: 100%*/
+    box-sizing: border-box;
+
+    /*margin可以设置很多*/
+    /*margin: 30px;*/
+    /*margin-bottom: 50px;*/
+
+    /*原属垂直居中显示*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+
+    margin: 50px auto;
+
+    /*2. 背景设置*/
+    background-color: gray;
+    /*background-image: url(./bg.jpg);*/
+
+    /*上偏移量，下偏移量，晕染范围，颜色*/
+    box-shadow: 5px 5px 5px grey;
+
+    position: relative;
+}
+
+/*3. 文本设置*/
+.box p{
+    /*选择box中的p标签*/
+    color: #666;
+    /*em是指p的文字字体大小，假如font-size=12px, 则1em=12px*/
+    text-indent: 2em;
+
+}
+
+.box h1{
+    font-size: 50px;
+    /*font-family: '黑体';*/
+    font-weight: normal;
+
+    /*文字左右（水平）居中*/
+    text-align: center;
+
+    /*文字在垂直方向垂直居中：行高=当前元素height*/
+    background-color: #666666;
+    height: 80px;
+    line-height: 80px;
+
+    /*艺术字*/
+    text-shadow: 2px 2px 2px black;
+    /*文字装饰*/
+    text-decoration: dashed underline;
+}
+
+.box span{
+    color:orange;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+
+    /*4. 位置*/
+    /*position: absolute;*/
+    position:fixed;
+    /*参考外部元素，如果给父元素加relative，则以这个为参考元素*/
+    top: 200px;
+    left: 5px;
+}
+
+
