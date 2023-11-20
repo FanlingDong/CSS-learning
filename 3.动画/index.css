@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.transition-box{
+
+}
+
+
+.container{
+    width: 200px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    perspective: 500px;
+
+}
+
+.transform-box{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    transition: all 1s;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+
+    /*旋转角要写在元素这里的css*/
+    transform-origin: right bottom;
+}
+
+.transform-box:hover {
+    /*transform: translate(100px, 20px);*/
+    /*transform: translateX(100px) translateY(20px);*/
+    /*transform: rotate(30deg);*/
+
+    /*transform: scale(.5, 2);*/
+
+    /*变形*/
+    /*transform: skew(-20deg, 20deg);*/
+
+     /*z 轴：垂直于电脑屏幕，*/
+    /*transform: translate3d(100px, 100px, 100px);*/
+
+    /*沿某个轴转动*/
+    transform: rotate3d(0, 0, 0, 100deg);
+}
